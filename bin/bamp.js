@@ -14,6 +14,6 @@ if (!cli.argv.major && !cli.argv.minor && !cli.argv.patch && !cli.argv.build) {
 
 cli.bump()
 .catch(function (err) {
-    console.error(err.stack);
+    console.error(err.stack || err.message || err);
     process.exit(1);
 });
