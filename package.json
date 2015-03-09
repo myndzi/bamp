@@ -1,10 +1,11 @@
 {
   "name": "bamp",
-  "version": "1.0.4",
+  "version": "1.0.4-1",
   "description": "Package.json version bumper",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -u bdd -R dot test/*.test.js"
+    "test": "mocha -u bdd -R dot test/*.test.js",
+    "bamp": "./bin/bamp.js"
   },
   "bin": {
     "bamp": "./bin/bamp.js"
