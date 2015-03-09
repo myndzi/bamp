@@ -1,6 +1,6 @@
 {
   "name": "bamp",
-  "version": "1.0.4-1",
+  "version": "1.0.4-2",
   "description": "Package.json version bumper",
   "main": "index.js",
   "scripts": {
