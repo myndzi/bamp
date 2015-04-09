@@ -89,12 +89,16 @@ describe('tags', function () {
         var ver = new Version('1.2.3', ['foo', 'bar']);
         ver.toString().should.equal('1.2.3-foo.bar');
         
-        ver = new Version('1.2.3-0', ['foo']);
-        ver.toString().should.equal('1.2.3-0.foo');
+        ver = new Version('1.2.3-1', ['foo']);
+        ver.toString().should.equal('1.2.3-1.foo');
     });
     it('should not duplicate prerelease tags', function () {
         var ver = new Version('1.2.3-foo', ['foo', 'bar']);
         ver.toString().should.equal('1.2.3-foo.bar');
+    });
+    it('should not merge tags', function () {
+        var ver = new Version('1.2.3-1.foo', ['bar']);
+        ver.toString().should.equal('1.2.3-1.bar');
     });
 });
 
