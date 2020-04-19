@@ -8,7 +8,7 @@ var Version = require('../lib/version'),
 var cli = new CLI(process.argv, process.cwd());
 
 if (!cli.argv.major && !cli.argv.minor && !cli.argv.patch && !cli.argv.build) {
-    console.log(cli.help());
+    cli.showHelp();
     process.exit();
 }
 
