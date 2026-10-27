@@ -1,3 +1,7 @@
+# Archived
+
+Legacy / unused
+
 # Bamp
 
 A version bump utility for node.js packages
